@@ -22,7 +22,7 @@ pipeline {
         }
         stage('push image') {
             steps{
-                sh 'docker push 14300341/nodeapp:latest'
+                sh 'docker push nodeapp 14300341/jenkins:latest'
             }
         }
 }
