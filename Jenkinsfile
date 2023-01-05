@@ -22,7 +22,7 @@ pipeline {
         }
         stage('push image') {
             steps{
-                sh 'docker push $BUILD_NUMBER'
+                sh 'docker push valaxy/nodeapp:$BUILD_NUMBER'
             }
         }
 }
