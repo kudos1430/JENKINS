@@ -22,7 +22,6 @@ pipeline {
         }
         stage('push image') {
             steps{
-                sh 'docker tag nodeapp 14300341/jenkins:latest'
                 sh 'docker push 14300341/jenkins:latest'
             }
         }
