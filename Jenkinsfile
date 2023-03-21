@@ -22,8 +22,8 @@ pipeline {
         }
         stage('push image') {
             steps{
-                sh 'docker tag d022d8f4f0dc 14300341/jenkins'
-                sh 'docker push 14300341/jenkins'
+                sh 'docker tag newimage 14300341/jenkins'
+                sh 'docker push 14300341/jenkins:newimage'
             }
         }
 }
