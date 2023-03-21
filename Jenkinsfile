@@ -22,8 +22,8 @@ pipeline {
         }
         stage('push image') {
             steps{
-     
-                sh 'docker push 14300341/jenkins:latest'
+                sh 'docker tag $BUILD_NUMBER 14300341/jenkins'
+                sh 'docker push 14300341/newjenkins:$BUILD_NUMBER'
             }
         }
 }
