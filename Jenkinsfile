@@ -22,8 +22,8 @@ pipeline {
         }
         stage('push image') {
             steps{
-                sh 'docker tag valaxy/nodeapp:latest 14300341/jenkins'
-                sh 'docker push 14300341/newjenkins:latest'
+                sh 'docker tag e6e47077f153 14300341/jenkins'
+                sh 'docker push 14300341/newjenkins'
             }
         }
 }
